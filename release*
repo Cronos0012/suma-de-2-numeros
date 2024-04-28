@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main() {
+    double numerador, denominador, resultado;
+
+    std::cout << "Introduce el numerador: ";
+    std::cin >> numerador;
+
+    std::cout << "Introduce el denominador: ";
+    std::cin >> denominador;
+
+    if (denominador == 0) {
+        std::cout << "Error: No se puede dividir por cero." << std::endl;
+    } else {
+        resultado = numerador / denominador;
+        std::cout << "Resultado: " << resultado << std::endl;
+    }
+
+    return 0;
+}
